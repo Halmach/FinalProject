@@ -24,7 +24,7 @@ namespace FinalProject
             {
                 var input = (Console.ReadKey().KeyChar);
                 var parsed = Int32.TryParse(input.ToString(), out int pageNumber);
-                Thread.Sleep(1000);
+     //           Thread.Sleep(1000);
                 Console.Clear();
 
                 var phoneBookSorted = phoneBook.OrderBy(c => c.Name).ThenBy(c => c.LastName);
